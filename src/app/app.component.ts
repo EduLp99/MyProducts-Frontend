@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./components/template/header/header.component";
+import { NavComponent } from "./components/template/nav/nav.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  templateUrl: 'app.component.html',
+  imports: [HeaderComponent, NavComponent]
 })
 export class AppComponent {
   title = 'MyProducts-Frontend';
