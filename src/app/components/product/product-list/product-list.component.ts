@@ -13,7 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 export class ProductListComponent {
 
   products: Product[] = []
-  displayedColumns: string[] = ['id', 'name', 'price', 'quantity'];
+  displayedColumns: string[] = ['name', 'price', 'quantity'];
   
   constructor(private productService: ProductService) { }
 
